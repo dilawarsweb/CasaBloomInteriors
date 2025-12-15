@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaBloom Interiors | Premium Home Décor Consultancy</title>
+    <meta name="description" content="CasaBloom Interiors transforms your living spaces with professional home décor consultancy. Forest-inspired designs creating harmony between nature and interior spaces.">
+    <meta name="keywords" content="home décor, interior design, home styling, forest theme, interior consultancy, home makeover">
+    <meta name="author" content="CasaBloom Interiors">
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="CasaBloom Interiors | Premium Home Décor Consultancy">
+    <meta property="og:description" content="Transform your living spaces with our forest-inspired interior designs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://casabloominteriors.com">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap">
+    <style>
+        :root {
+            --forest-green: #2d5a27;
+            --sage-green: #8a9a5b;
+            --moss-green: #6b8e23;
+            --light-green: #f5f9f4;
+            --cream: #faf8f0;
+            --dark-brown: #3e2723;
+            --light-brown: #a1887f;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-brown);
+            background-color: var(--cream);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--forest-green);
+            font-weight: 600;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--forest-green);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 15px;
+        }
+        
+        .btn:hover {
+            background-color: var(--moss-green);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(45, 90, 39, 0.15);
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            color: var(--forest-green);
+            font-size: 32px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--forest-green);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-brown);
+            font-weight: 500;
+            font-size: 16px;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--forest-green);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--forest-green);
+            bottom: -5px;
+            left: 0;
+            transition: var(--transition);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--forest-green);
+            cursor: pointer;
+        }
+        
+        /* Policy Pages Container */
+        .policy-container {
+            padding: 80px 0;
+            min-height: calc(100vh - 400px);
+        }
+        
+        .policy-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--light-green);
+        }
+        
+        .policy-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .last-updated {
+            color: var(--light-brown);
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .policy-content {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        
+        .policy-section {
+            margin-bottom: 30px;
+        }
+        
+        .policy-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--forest-green);
+            border-bottom: 1px solid var(--light-green);
+            padding-bottom: 10px;
+        }
+        
+        .policy-section h3 {
+            font-size: 1.3rem;
+            margin: 20px 0 10px;
+            color: var(--moss-green);
+        }
+        
+        .policy-section p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .policy-section ul, .policy-section ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .policy-section li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        
+        .policy-note {
+            background-color: var(--light-green);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--sage-green);
+            margin: 25px 0;
+        }
+        
+        .back-to-home {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .policy-navigation {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--light-green);
+        }
+        
+        .policy-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--light-green);
+            color: var(--forest-green);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .policy-link:hover {
+            background-color: var(--sage-green);
+            color: var(--white);
+        }
+        
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(rgba(45, 90, 39, 0.85), rgba(45, 90, 39, 0.8)), url('https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--white);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero .btn {
+            background-color: var(--white);
+            color: var(--forest-green);
+        }
+        
+        .hero .btn:hover {
+            background-color: var(--light-green);
+        }
+        
+        /* About Us Section */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 3px;
+            background-color: var(--sage-green);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition);
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: var(--light-green);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(45, 90, 39, 0.1);
+        }
+        
+        .service-icon {
+            font-size: 50px;
+            color: var(--forest-green);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        /* Portfolio Section */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .portfolio-item {
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            height: 280px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(45, 90, 39, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .portfolio-overlay h3 {
+            color: var(--white);
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+        
+        .lightbox-img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: var(--white);
+            font-size: 30px;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+        
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        
+        .lightbox-prev, .lightbox-next {
+            color: var(--white);
+            font-size: 40px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0 20px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--light-green);
+        }
+        
+        .testimonial-slider {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        .testimonial-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .testimonial-card {
+            min-width: 100%;
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 3px solid var(--light-green);
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: var(--sage-green);
+            font-size: 0.9rem;
+        }
+        
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+        
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--light-brown);
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .slider-dot.active {
+            background-color: var(--forest-green);
+            transform: scale(1.2);
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: flex;
+            gap: 50px;
+        }
+        
+        .contact-form {
+            flex: 1;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--dark-brown);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--forest-green);
+            box-shadow: 0 0 0 2px rgba(45, 90, 39, 0.2);
+        }
+        
+        .contact-map {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .map-placeholder {
+            width: 100%;
+            height: 100%;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--forest-green);
+            font-weight: 600;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--forest-green);
+            color: var(--white);
+            padding: 70px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-column h3 {
+            color: var(--white);
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: var(--sage-green);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 5px;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-icon:hover {
+            background-color: var(--sage-green);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+        
+        /* Page Transitions */
+        .page {
+            display: none;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .contact-map {
+                height: 400px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                padding: 80px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .policy-content {
+                padding: 25px;
+            }
+            
+            .policy-header h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .policy-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#home" class="logo" data-target="home">
+                <i class="fas fa-leaf logo-icon"></i>
+                <span class="logo-text">CasaBloom Interiors</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-target="home">Home</a></li>
+                <li><a href="#about" data-target="about">About Us</a></li>
+                <li><a href="#services" data-target="services">Services</a></li>
+                <li><a href="#portfolio" data-target="portfolio">Portfolio</a></li>
+                <li><a href="#testimonials" data-target="testimonials">Testimonials</a></li>
+                <li><a href="#contact" data-target="contact">Contact</a></li>
+                <li><a href="#legal" data-target="legal">Legal</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <!-- Hero Banner -->
+            <section class="hero" id="home">
+                <div class="container hero-content">
+                    <h1>Transform Your Home Into a Forest Oasis</h1>
+                    <p>CasaBloom Interiors brings nature's serenity into your living spaces with our expert home décor consultancy. Experience the perfect harmony between elegant design and natural elements.</p>
+                    <a href="#contact" class="btn" data-target="contact">Book a Free Consultation</a>
+                </div>
+            </section>
+
+            <!-- About Us -->
+            <section class="section" id="about">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>About CasaBloom Interiors</h2>
+                    </div>
+                    
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>Founded in 2015, CasaBloom Interiors specializes in creating harmonious living spaces that connect you with nature. Our forest green-inspired designs bring the tranquility and beauty of the outdoors into your home.</p>
+                            <p>With over 8 years of experience in the home décor industry, our team of certified designers has transformed more than 500 homes, creating spaces that are not only beautiful but also promote well-being and balance.</p>
+                            <p>We believe that your home should be a sanctuary—a place where you can relax, recharge, and connect with what matters most. Our nature-inspired approach combines sustainable materials, organic textures, and thoughtful design to create spaces that feel both luxurious and grounded.</p>
+                            <a href="#contact" class="btn" data-target="contact">Get to Know Us</a>
+                        </div>
+                        
+                        <div class="about-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80" alt="CasaBloom Interiors team designing a living room">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <section class="section services" id="services">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Our Services</h2>
+                    </div>
+                    
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3>Full Home Design</h3>
+                            <p>Complete interior transformation from concept to completion, including furniture selection, color schemes, and décor styling.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-couch"></i>
+                            </div>
+                            <h3>Room Makeovers</h3>
+                            <p>Focus on specific rooms like living areas, bedrooms, or home offices with our signature forest-inspired design approach.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>Color Consultation</h3>
+                            <p>Expert guidance on selecting the perfect forest-inspired color palette to create harmony and flow throughout your home.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <h3>Sustainable Design</h3>
+                            <p>Eco-friendly solutions using sustainable materials, energy-efficient lighting, and indoor plants for healthier living spaces.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <h3>Furniture Sourcing</h3>
+                            <p>Access to exclusive furniture and décor pieces that complement our nature-inspired designs, with white-glove delivery service.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <h3>Design Review</h3>
+                            <p>Professional assessment of your existing décor with actionable recommendations to enhance your space's natural appeal.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio -->
+            <section class="section" id="portfolio">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Our Portfolio</h2>
+                    </div>
+                    
+                    <div class="portfolio-grid">
+                        <!-- Portfolio Item 1 -->
+                        <div class="portfolio-item" data-index="0">
+                            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Forest-inspired living room design">
+                            <div class="portfolio-overlay">
+                                <h3>Evergreen Living Room</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Item 2 -->
+                        <div class="portfolio-item" data-index="1">
+                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Nature-themed bedroom design">
+                            <div class="portfolio-overlay">
+                                <h3>Tranquil Bedroom Retreat</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Item 3 -->
+                        <div class="portfolio-item" data-index="2">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80" alt="Eco-friendly kitchen design">
+                            <div class="portfolio-overlay">
+                                <h3>Sustainable Kitchen</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Item 4 -->
+                        <div class="portfolio-item" data-index="3">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Green home office design">
+                            <div class="portfolio-overlay">
+                                <h3>Nature-Inspired Home Office</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Item 5 -->
+                        <div class="portfolio-item" data-index="4">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1752&q=80" alt="Modern bathroom with natural elements">
+                            <div class="portfolio-overlay">
+                                <h3>Spa-Like Bathroom Oasis</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Item 6 -->
+                        <div class="portfolio-item" data-index="5">
+                            <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Dining area with forest view">
+                            <div class="portfolio-overlay">
+                                <h3>Woodland Dining Experience</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Item 7 -->
+                        <div class="portfolio-item" data-index="6">
+                            <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Reading nook with green accents">
+                            <div class="portfolio-overlay">
+                                <h3>Cozy Reading Nook</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio Item 8 -->
+                        <div class="portfolio-item" data-index="7">
+                            <img src="https://images.unsplash.com/photo-1615529328331-f8917597711f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Outdoor-indoor transition space">
+                            <div class="portfolio-overlay">
+                                <h3>Seamless Indoor-Outdoor Space</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lightbox Modal -->
+            <div class="lightbox" id="lightbox">
+                <button class="lightbox-close" id="lightboxClose">&times;</button>
+                <div class="lightbox-content">
+                    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+                    <div class="lightbox-nav">
+                        <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <section class="section testimonials" id="testimonials">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Client Testimonials</h2>
+                    </div>
+                    
+                    <div class="testimonial-slider">
+                        <div class="testimonial-track" id="testimonialTrack">
+                            <!-- Testimonial 1 -->
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">"CasaBloom transformed our apartment into a serene forest retreat. The team's attention to detail and their ability to incorporate natural elements made our home a true sanctuary. We couldn't be happier with the results!"</p>
+                                <div class="testimonial-author">
+                                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                                    <div class="author-info">
+                                        <h4>Sarah Johnson</h4>
+                                        <p>Greenwood Hills Residence</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 2 -->
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">"Working with CasaBloom was an absolute pleasure. They understood our vision for a sustainable, nature-inspired home and brought it to life beyond our expectations. The color palette and material choices are perfect."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Michael Chen">
+                                    <div class="author-info">
+                                        <h4>Michael Chen</h4>
+                                        <p>Forest Edge Condo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 3 -->
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">"The team at CasaBloom has an incredible eye for design. They transformed our open-concept space into a cohesive, calming environment that feels connected to nature. Every guest compliments our home's unique atmosphere."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Elena Rodriguez">
+                                    <div class="author-info">
+                                        <h4>Elena Rodriguez</h4>
+                                        <p>Riverbend Family Home</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 4 -->
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">"As someone who works from home, having a peaceful, inspiring environment was crucial. CasaBloom created a home office that boosts my productivity while making me feel like I'm working in a forest cabin. Highly recommended!"</p>
+                                <div class="testimonial-author">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Park">
+                                    <div class="author-info">
+                                        <h4>David Park</h4>
+                                        <p>Home Office Transformation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 5 -->
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">"CasaBloom's sustainable design approach was exactly what we were looking for. They sourced eco-friendly materials and created a space that's not only beautiful but also environmentally conscious. Our energy bills have even gone down!"</p>
+                                <div class="testimonial-author">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma">
+                                    <div class="author-info">
+                                        <h4>Priya Sharma</h4>
+                                        <p>Eco-Friendly Renovation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 6 -->
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">"The color consultation service was worth every penny. CasaBloom helped us choose a forest-inspired palette that flows beautifully throughout our home. It's calming, sophisticated, and perfectly reflects our personality."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="James Wilson">
+                                    <div class="author-info">
+                                        <h4>James Wilson</h4>
+                                        <p>Color Consultation Client</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 7 -->
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">"From the initial consultation to the final installation, CasaBloom was professional, creative, and attentive. They transformed our dated living room into a modern forest oasis that we love spending time in. The process was seamless!"</p>
+                                <div class="testimonial-author">
+                                    <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Olivia Martin">
+                                    <div class="author-info">
+                                        <h4>Olivia Martin</h4>
+                                        <p>Living Room Makeover</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-nav" id="sliderNav">
+                            <!-- Dots will be generated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="section" id="contact">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Contact Us</h2>
+                    </div>
+                    
+                    <div class="contact-container">
+                        <div class="contact-form">
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" class="form-control" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" class="form-control">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="service">Service Interested In</label>
+                                    <select id="service" class="form-control">
+                                        <option value="">Select a service</option>
+                                        <option value="full-home">Full Home Design</option>
+                                        <option value="room-makeover">Room Makeover</option>
+                                        <option value="color-consultation">Color Consultation</option>
+                                        <option value="sustainable-design">Sustainable Design</option>
+                                        <option value="furniture-sourcing">Furniture Sourcing</option>
+                                        <option value="design-review">Design Review</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" rows="5" class="form-control" required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn">Send Message</button>
+                            </form>
+                        </div>
+                        
+                        <div class="contact-map">
+                            <div class="map-placeholder">
+                                <div>
+                                    <i class="fas fa-map-marker-alt" style="font-size: 48px; margin-bottom: 15px;"></i>
+                                    <h3>Our Location</h3>
+                                    <p>123 Forest Avenue, Greenwood City</p>
+                                    <p>Open: Mon-Fri 9am-6pm, Sat 10am-4pm</p>
+                                    <p>Email: info@casabloominteriors.com</p>
+                                    <p>Phone: (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <!-- In a real implementation, you would embed a Google Maps iframe here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- End of Home Page -->
+
+        <!-- Policy Pages -->
+        <div id="policy-pages" class="page">
+            <!-- Policy content will be loaded here dynamically -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CasaBloom Interiors</h3>
+                    <p>Bringing the serenity of nature into your home through thoughtful, sustainable interior design solutions.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-houzz"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-target="home">Home</a></li>
+                        <li><a href="#about" data-target="about">About Us</a></li>
+                        <li><a href="#services" data-target="services">Services</a></li>
+                        <li><a href="#portfolio" data-target="portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials" data-target="testimonials">Testimonials</a></li>
+                        <li><a href="#contact" data-target="contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column" id="legal">
+                    <h3>Legal & Policies</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-policy="privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-policy="terms">Terms of Service</a></li>
+                        <li><a href="#" data-policy="cookie">Cookie Policy</a></li>
+                        <li><a href="#" data-policy="disclaimer">Disclaimer</a></li>
+                        <li><a href="#" data-policy="refund">Refund Policy</a></li>
+                        <li><a href="#" data-policy="accessibility">Accessibility Statement</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Forest Avenue, Greenwood City</li>
+                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@casabloominteriors.com</li>
+                        <li><i class="fas fa-clock" style="margin-right: 10px;"></i> Mon-Fri: 9am-6pm, Sat: 10am-4pm</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 CasaBloom Interiors. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #ff6b6b;"></i> for nature lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Page Management System
+        const pages = document.querySelectorAll('.page');
+        const homePage = document.getElementById('home-page');
+        const policyPages = document.getElementById('policy-pages');
+        
+        // Show a specific page and hide others
+        function showPage(pageId) {
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            if (pageId === 'home-page') {
+                homePage.classList.add('active');
+                document.title = 'CasaBloom Interiors | Premium Home Décor Consultancy';
+            } else if (pageId === 'policy-pages') {
+                policyPages.classList.add('active');
+            }
+            
+            // Close mobile menu
+            navLinks.classList.remove('active');
+            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+        
+        // Navigation system
+        document.querySelectorAll('[data-target]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = link.getAttribute('data-target');
+                
+                if (target === 'legal') {
+                    // Show privacy policy as default legal page
+                    loadPolicyPage('privacy');
+                    showPage('policy-pages');
+                } else if (target === 'home' || target === 'about' || target === 'services' || 
+                           target === 'portfolio' || target === 'testimonials' || target === 'contact') {
+                    // Show home page and scroll to section
+                    showPage('home-page');
+                    
+                    // Scroll to the specific section after a short delay
+                    setTimeout(() => {
+                        const section = document.getElementById(target);
+                        if (section) {
+                            const headerHeight = document.querySelector('header').offsetHeight;
+                            window.scrollTo({
+                                top: section.offsetTop - headerHeight,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }, 100);
+                }
+            });
+        });
+        
+        // Policy Pages System - COMPLETE BUT BRIEF POLICIES
+        const policyTemplates = {
+            privacy: `
+                <div class="container policy-container">
+                    <div class="policy-header">
+                        <h1>Privacy Policy</h1>
+                        <p class="last-updated">Last Updated: December 1, 2023</p>
+                    </div>
+                    
+                    <div class="policy-content">
+                        <div class="policy-section">
+                            <h2>Our Commitment to Your Privacy</h2>
+                            <p>CasaBloom Interiors is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Information We Collect</h2>
+                            <p>We collect information that you voluntarily provide when you:</p>
+                            <ul>
+                                <li>Contact us for consultations or inquiries</li>
+                                <li>Sign up for our newsletter or promotions</li>
+                                <li>Complete our contact forms</li>
+                                <li>Participate in surveys or contests</li>
+                            </ul>
+                            <p>This may include your name, email address, phone number, address, project details, and payment information.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>How We Use Your Information</h2>
+                            <p>We use your information to:</p>
+                            <ul>
+                                <li>Provide and improve our interior design services</li>
+                                <li>Process transactions and send invoices</li>
+                                <li>Communicate with you about your project</li>
+                                <li>Send promotional materials with your consent</li>
+                                <li>Respond to customer service requests</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Data Security</h2>
+                            <p>We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Your Rights</h2>
+                            <p>You have the right to:</p>
+                            <ul>
+                                <li>Access your personal information we hold</li>
+                                <li>Correct inaccurate information</li>
+                                <li>Request deletion of your information</li>
+                                <li>Opt-out of marketing communications</li>
+                                <li>Withdraw consent at any time</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Contact Us</h2>
+                            <p>If you have questions about this Privacy Policy, please contact:</p>
+                            <div class="policy-note">
+                                <p><strong>Privacy Officer</strong><br>
+                                CasaBloom Interiors<br>
+                                Email: privacy@casabloominteriors.com<br>
+                                Phone: (555) 123-4567 ext. 1<br>
+                                123 Forest Avenue, Greenwood City</p>
+                            </div>
+                        </div>
+                        
+                        <div class="back-to-home">
+                            <a href="#" data-target="home" class="btn">Back to Home</a>
+                        </div>
+                        
+                        <div class="policy-navigation">
+                            <a href="#" data-policy="terms">Terms of Service</a>
+                            <a href="#" data-policy="cookie">Cookie Policy</a>
+                            <a href="#" data-policy="disclaimer">Disclaimer</a>
+                            <a href="#" data-policy="refund">Refund Policy</a>
+                            <a href="#" data-policy="accessibility">Accessibility Statement</a>
+                        </div>
+                    </div>
+                </div>
+            `,
+            terms: `
+                <div class="container policy-container">
+                    <div class="policy-header">
+                        <h1>Terms of Service</h1>
+                        <p class="last-updated">Last Updated: December 1, 2023</p>
+                    </div>
+                    
+                    <div class="policy-content">
+                        <div class="policy-section">
+                            <h2>Agreement to Terms</h2>
+                            <p>By accessing or using CasaBloom Interiors' website and services, you agree to be bound by these Terms of Service. If you disagree with any part, you may not access our services.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Services Provided</h2>
+                            <p>CasaBloom Interiors provides professional interior design consultation and implementation services including:</p>
+                            <ul>
+                                <li>Home and room design consultations</li>
+                                <li>Color scheme development</li>
+                                <li>Furniture and décor selection</li>
+                                <li>Project management services</li>
+                                <li>Sustainable design solutions</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Client Responsibilities</h2>
+                            <p>As our client, you agree to:</p>
+                            <ul>
+                                <li>Provide accurate information about your space and needs</li>
+                                <li>Make timely decisions and provide feedback</li>
+                                <li>Adhere to payment schedules as outlined in your contract</li>
+                                <li>Grant necessary access to your property for consultations</li>
+                                <li>Obtain any required permits or approvals</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Intellectual Property</h2>
+                            <p>All design concepts, drawings, specifications, and plans created by CasaBloom Interiors remain our intellectual property until full payment is received. Upon completion of payment, you receive a license to use the designs for your specified property.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Payment Terms</h2>
+                            <p>All projects require:</p>
+                            <ul>
+                                <li>50% deposit before work begins</li>
+                                <li>25% upon design approval</li>
+                                <li>25% upon project completion</li>
+                            </ul>
+                            <p>Payments are due within 14 days of invoice date. Late payments may incur a 1.5% monthly interest charge.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Limitation of Liability</h2>
+                            <p>CasaBloom Interiors' liability is limited to the total amount paid for services. We are not liable for delays caused by third-party vendors, unforeseen site conditions, or client-caused delays.</p>
+                        </div>
+                        
+                        <div class="back-to-home">
+                            <a href="#" data-target="home" class="btn">Back to Home</a>
+                        </div>
+                        
+                        <div class="policy-navigation">
+                            <a href="#" data-policy="privacy">Privacy Policy</a>
+                            <a href="#" data-policy="cookie">Cookie Policy</a>
+                            <a href="#" data-policy="disclaimer">Disclaimer</a>
+                            <a href="#" data-policy="refund">Refund Policy</a>
+                            <a href="#" data-policy="accessibility">Accessibility Statement</a>
+                        </div>
+                    </div>
+                </div>
+            `,
+            cookie: `
+                <div class="container policy-container">
+                    <div class="policy-header">
+                        <h1>Cookie Policy</h1>
+                        <p class="last-updated">Last Updated: December 1, 2023</p>
+                    </div>
+                    
+                    <div class="policy-content">
+                        <div class="policy-section">
+                            <h2>What Are Cookies?</h2>
+                            <p>Cookies are small text files placed on your device when you visit our website. They help us provide you with a better experience by remembering your preferences and understanding how you use our site.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Types of Cookies We Use</h2>
+                            
+                            <h3>Essential Cookies</h3>
+                            <p>These are necessary for the website to function properly. They enable basic functions like page navigation and access to secure areas.</p>
+                            
+                            <h3>Performance Cookies</h3>
+                            <p>These help us understand how visitors interact with our website by collecting and reporting information anonymously.</p>
+                            
+                            <h3>Functional Cookies</h3>
+                            <p>These allow the website to remember choices you make (such as your language preference) and provide enhanced features.</p>
+                            
+                            <h3>Targeting Cookies</h3>
+                            <p>These may be set through our site by our advertising partners to build a profile of your interests.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Cookie Management</h2>
+                            <p>You can control and/or delete cookies as you wish. Most web browsers allow you to:</p>
+                            <ul>
+                                <li>See what cookies you have and delete them individually</li>
+                                <li>Block third-party cookies</li>
+                                <li>Block cookies from particular sites</li>
+                                <li>Block all cookies</li>
+                                <li>Delete all cookies when you close your browser</li>
+                            </ul>
+                            <div class="policy-note">
+                                <p><strong>Note:</strong> If you disable cookies, some features of our website may not function properly.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Third-Party Cookies</h2>
+                            <p>We may use services from third parties that set cookies on our website, including:</p>
+                            <ul>
+                                <li><strong>Google Analytics:</strong> For website traffic analysis</li>
+                                <li><strong>Social Media Platforms:</strong> For sharing and engagement features</li>
+                                <li><strong>Payment Processors:</strong> For secure transactions</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="back-to-home">
+                            <a href="#" data-target="home" class="btn">Back to Home</a>
+                        </div>
+                        
+                        <div class="policy-navigation">
+                            <a href="#" data-policy="privacy">Privacy Policy</a>
+                            <a href="#" data-policy="terms">Terms of Service</a>
+                            <a href="#" data-policy="disclaimer">Disclaimer</a>
+                            <a href="#" data-policy="refund">Refund Policy</a>
+                            <a href="#" data-policy="accessibility">Accessibility Statement</a>
+                        </div>
+                    </div>
+                </div>
+            `,
+            disclaimer: `
+                <div class="container policy-container">
+                    <div class="policy-header">
+                        <h1>Disclaimer</h1>
+                        <p class="last-updated">Last Updated: December 1, 2023</p>
+                    </div>
+                    
+                    <div class="policy-content">
+                        <div class="policy-section">
+                            <h2>General Information</h2>
+                            <p>The information provided by CasaBloom Interiors on our website, social media, and marketing materials is for general informational purposes only. All information is provided in good faith, however we make no warranty of any kind regarding the accuracy, adequacy, validity, reliability, or completeness of any information.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Professional Advice</h2>
+                            <p>The content on our website is not intended to be a substitute for professional interior design advice. Always seek the advice of qualified professionals regarding any interior design decisions. Never disregard professional advice or delay seeking it because of something you have read on our website.</p>
+                            <div class="policy-note">
+                                <p><strong>Important:</strong> Our website content does not constitute a design contract or guarantee specific results. Actual outcomes may vary based on individual circumstances.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Testimonials and Results</h2>
+                            <p>Testimonials on our website are real experiences from past clients. However, results may vary. We do not claim that similar results will be achieved for all clients. The testimonials are not necessarily representative of all who use our services.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>External Links</h2>
+                            <p>Our website may contain links to external websites that are not provided or maintained by us. We do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Photography and Imagery</h2>
+                            <p>Photographs and renderings on our website may include stock photography, digitally enhanced images, or staged settings. These are for illustrative purposes only and may not represent exact results.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Limitation of Liability</h2>
+                            <p>To the maximum extent permitted by law, CasaBloom Interiors shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly.</p>
+                        </div>
+                        
+                        <div class="back-to-home">
+                            <a href="#" data-target="home" class="btn">Back to Home</a>
+                        </div>
+                        
+                        <div class="policy-navigation">
+                            <a href="#" data-policy="privacy">Privacy Policy</a>
+                            <a href="#" data-policy="terms">Terms of Service</a>
+                            <a href="#" data-policy="cookie">Cookie Policy</a>
+                            <a href="#" data-policy="refund">Refund Policy</a>
+                            <a href="#" data-policy="accessibility">Accessibility Statement</a>
+                        </div>
+                    </div>
+                </div>
+            `,
+            refund: `
+                <div class="container policy-container">
+                    <div class="policy-header">
+                        <h1>Refund Policy</h1>
+                        <p class="last-updated">Last Updated: December 1, 2023</p>
+                    </div>
+                    
+                    <div class="policy-content">
+                        <div class="policy-section">
+                            <h2>Our Refund Philosophy</h2>
+                            <p>At CasaBloom Interiors, we strive to deliver exceptional service that meets or exceeds your expectations. This refund policy outlines the circumstances under which refunds may be granted.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Consultation Services</h2>
+                            <h3>Initial Consultations</h3>
+                            <ul>
+                                <li><strong>Free consultations:</strong> No refund applicable</li>
+                                <li><strong>Paid consultations:</strong> Full refund if cancelled at least 48 hours in advance</li>
+                                <li><strong>No-shows:</strong> No refund</li>
+                                <li><strong>Completed consultations:</strong> Non-refundable</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Design Project Fees</h2>
+                            <h3>Deposits</h3>
+                            <p>The initial 50% project deposit is non-refundable once design work has commenced, as it covers initial concept development, research, and planning specific to your project.</p>
+                            
+                            <h3>Project Cancellation</h3>
+                            <ul>
+                                <li><strong>Before work begins:</strong> Full refund minus $150 administrative fee</li>
+                                <li><strong>After concept development:</strong> Refund of unused portion of deposit minus work completed</li>
+                                <li><strong>After design approval:</strong> No refund of deposit</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Product Purchases</h2>
+                            <h3>Standard Items</h3>
+                            <p>Items purchased through our sourcing service may be returned within 30 days if:</p>
+                            <ul>
+                                <li>Item is in original condition</li>
+                                <li>Original packaging is intact</li>
+                                <li>Return shipping is paid by client</li>
+                                <li>15% restocking fee applies</li>
+                            </ul>
+                            
+                            <h3>Custom/Special Order Items</h3>
+                            <p>Custom-made furniture, window treatments, and special order items are non-refundable and non-returnable once ordered.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Refund Process</h2>
+                            <ol>
+                                <li>Submit refund request via email to refunds@casabloominteriors.com</li>
+                                <li>Include your name, project details, and reason for request</li>
+                                <li>We will respond within 5 business days</li>
+                                <li>Approved refunds processed within 14 business days</li>
+                                <li>Refunds issued to original payment method</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Exceptions</h2>
+                            <p>We may make exceptions to this policy in cases of:</p>
+                            <ul>
+                                <li>Significant service failure on our part</li>
+                                <li>Proven misrepresentation of services</li>
+                                <li>Extenuating circumstances (documentation required)</li>
+                            </ul>
+                            <div class="policy-note">
+                                <p><strong>Note:</strong> All refund decisions are at the sole discretion of CasaBloom Interiors management.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="back-to-home">
+                            <a href="#" data-target="home" class="btn">Back to Home</a>
+                        </div>
+                        
+                        <div class="policy-navigation">
+                            <a href="#" data-policy="privacy">Privacy Policy</a>
+                            <a href="#" data-policy="terms">Terms of Service</a>
+                            <a href="#" data-policy="cookie">Cookie Policy</a>
+                            <a href="#" data-policy="disclaimer">Disclaimer</a>
+                            <a href="#" data-policy="accessibility">Accessibility Statement</a>
+                        </div>
+                    </div>
+                </div>
+            `,
+            accessibility: `
+                <div class="container policy-container">
+                    <div class="policy-header">
+                        <h1>Accessibility Statement</h1>
+                        <p class="last-updated">Last Updated: December 1, 2023</p>
+                    </div>
+                    
+                    <div class="policy-content">
+                        <div class="policy-section">
+                            <h2>Our Commitment</h2>
+                            <p>CasaBloom Interiors is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying relevant accessibility standards to provide equal access to all users.</p>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Conformance Status</h2>
+                            <p>We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA. These guidelines explain how to make web content more accessible for people with disabilities.</p>
+                            <div class="policy-note">
+                                <p><strong>Current Status:</strong> We are actively working to achieve full WCAG 2.1 Level AA compliance. Some areas of our website are still being improved.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Accessibility Features</h2>
+                            <p>Our website includes the following accessibility features:</p>
+                            <ul>
+                                <li>Text alternatives for non-text content</li>
+                                <li>Content that can be presented in different ways without losing information</li>
+                                <li>Content that is easier to see and hear</li>
+                                <li>Keyboard accessibility for all functionality</li>
+                                <li>Clear navigation and consistent layout</li>
+                                <li>Text resizing capabilities (use browser zoom controls)</li>
+                                <li>Sufficient color contrast between text and background</li>
+                                <li>Descriptive link text</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Areas for Improvement</h2>
+                            <p>We are actively working to improve the following areas:</p>
+                            <ul>
+                                <li>Alternative text for all images</li>
+                                <li>Video captioning</li>
+                                <li>Form labels and error messages</li>
+                                <li>Keyboard navigation enhancements</li>
+                                <li>Screen reader compatibility</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Physical Accessibility</h2>
+                            <p>Our design studio at 123 Forest Avenue is fully accessible:</p>
+                            <ul>
+                                <li>Wheelchair ramp at main entrance</li>
+                                <li>Wide doorways and hallways (minimum 36 inches)</li>
+                                <li>Accessible restrooms</li>
+                                <li>Adjustable consultation table</li>
+                                <li>Assistive listening devices available upon request</li>
+                                <li>Service animals welcome</li>
+                                <li>Reserved accessible parking near entrance</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Feedback and Contact</h2>
+                            <p>We welcome your feedback on the accessibility of our website and services. Please let us know if you encounter accessibility barriers:</p>
+                            <div class="policy-note">
+                                <p><strong>Accessibility Coordinator</strong><br>
+                                CasaBloom Interiors<br>
+                                Email: accessibility@casabloominteriors.com<br>
+                                Phone: (555) 123-4567 ext. 3 (TTY available)<br>
+                                Mail: 123 Forest Avenue, Greenwood City</p>
+                                <p>We aim to respond to accessibility feedback within 5 business days.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="policy-section">
+                            <h2>Alternative Formats</h2>
+                            <p>We can provide information in alternative formats upon request, including:</p>
+                            <ul>
+                                <li>Large print documents</li>
+                                <li>Audio recordings</li>
+                                <li>Braille (advance notice required)</li>
+                                <li>Electronic text files</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="back-to-home">
+                            <a href="#" data-target="home" class="btn">Back to Home</a>
+                        </div>
+                        
+                        <div class="policy-navigation">
+                            <a href="#" data-policy="privacy">Privacy Policy</a>
+                            <a href="#" data-policy="terms">Terms of Service</a>
+                            <a href="#" data-policy="cookie">Cookie Policy</a>
+                            <a href="#" data-policy="disclaimer">Disclaimer</a>
+                            <a href="#" data-policy="refund">Refund Policy</a>
+                        </div>
+                    </div>
+                </div>
+            `
+        };
+        
+        // Load policy page content
+        function loadPolicyPage(policyId) {
+            if (policyTemplates[policyId]) {
+                policyPages.innerHTML = policyTemplates[policyId];
+                
+                // Update page title
+                const policyTitle = policyId.split('-').map(word => 
+                    word.charAt(0).toUpperCase() + word.slice(1)
+                ).join(' ');
+                document.title = `${policyTitle} | CasaBloom Interiors`;
+                
+                // Re-attach event listeners to new policy navigation links
+                setTimeout(() => {
+                    document.querySelectorAll('[data-policy]').forEach(link => {
+                        link.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const policy = link.getAttribute('data-policy');
+                            loadPolicyPage(policy);
+                        });
+                    });
+                    
+                    document.querySelectorAll('[data-target="home"]').forEach(link => {
+                        link.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            showPage('home-page');
+                        });
+                    });
+                }, 10);
+            }
+        }
+        
+        // Handle policy navigation in footer
+        document.querySelectorAll('[data-policy]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const policyId = link.getAttribute('data-policy');
+                loadPolicyPage(policyId);
+                showPage('policy-pages');
+            });
+        });
+        
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const lightboxPrev = document.getElementById('lightboxPrev');
+        const lightboxNext = document.getElementById('lightboxNext');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        
+        // Portfolio images for lightbox
+        const portfolioImages = [
+            'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
+            'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
+            'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80',
+            'https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80',
+            'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1752&q=80',
+            'https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
+            'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
+            'https://images.unsplash.com/photo-1615529328331-f8917597711f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80'
+        ];
+        
+        let currentImageIndex = 0;
+        
+        // Open lightbox when portfolio item is clicked
+        portfolioItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (homePage.classList.contains('active')) {
+                    currentImageIndex = parseInt(item.getAttribute('data-index'));
+                    updateLightboxImage();
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+        
+        // Close lightbox
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close lightbox when clicking outside image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Navigate lightbox
+        lightboxPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex - 1 + portfolioImages.length) % portfolioImages.length;
+            updateLightboxImage();
+        });
+        
+        lightboxNext.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex + 1) % portfolioImages.length;
+            updateLightboxImage();
+        });
+        
+        function updateLightboxImage() {
+            lightboxImg.src = portfolioImages[currentImageIndex];
+            lightboxImg.alt = `Portfolio image ${currentImageIndex + 1}`;
+        }
+        
+        // Testimonial slider
+        const testimonialTrack = document.getElementById('testimonialTrack');
+        const sliderNav = document.getElementById('sliderNav');
+        const testimonialCards = document.querySelectorAll('.testimonial-card');
+        let currentSlide = 0;
+        
+        // Create slider dots
+        testimonialCards.forEach((_, index) => {
+            const dot = document.createElement('button');
+            dot.className = 'slider-dot';
+            if (index === 0) dot.classList.add('active');
+            dot.setAttribute('data-slide', index);
+            dot.addEventListener('click', () => goToSlide(index));
+            sliderNav.appendChild(dot);
+        });
+        
+        const dots = document.querySelectorAll('.slider-dot');
+        
+        function goToSlide(slideIndex) {
+            testimonialTrack.style.transform = `translateX(-${slideIndex * 100}%)`;
+            currentSlide = slideIndex;
+            
+            // Update active dot
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[slideIndex].classList.add('active');
+        }
+        
+        // Auto-advance slides
+        let slideInterval = setInterval(() => {
+            if (homePage.classList.contains('active')) {
+                let nextSlide = (currentSlide + 1) % testimonialCards.length;
+                goToSlide(nextSlide);
+            }
+        }, 5000);
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            
+            // In a real implementation, you would send this data to a server
+            // For demo purposes, we'll just show an alert
+            alert(`Thank you ${name}! Your consultation request has been submitted. We'll contact you at ${email} regarding ${service || 'our services'} shortly.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Handle URL hash for section navigation
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash && (hash === 'home' || hash === 'about' || hash === 'services' || 
+                hash === 'portfolio' || hash === 'testimonials' || hash === 'contact')) {
+                showPage('home-page');
+                
+                // Scroll to the specific section after a short delay
+                setTimeout(() => {
+                    const section = document.getElementById(hash);
+                    if (section) {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        window.scrollTo({
+                            top: section.offsetTop - headerHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+                }, 100);
+            }
+        });
+        
+        // Initial check for hash on page load
+        if (window.location.hash) {
+            const hash = window.location.hash.substring(1);
+            if (hash && (hash === 'home' || hash === 'about' || hash === 'services' || 
+                hash === 'portfolio' || hash === 'testimonials' || hash === 'contact')) {
+                // Already showing home page by default, just scroll to section
+                setTimeout(() => {
+                    const section = document.getElementById(hash);
+                    if (section) {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        window.scrollTo({
+                            top: section.offsetTop - headerHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+                }, 300);
+            }
+        }
+    </script>
+</body>
+</html>
